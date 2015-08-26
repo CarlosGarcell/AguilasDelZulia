@@ -4,35 +4,6 @@
 	text-align: center;
 }
 
-.adBanner-top-wrapper {
-	padding-top: 10px;
-	padding-bottom: 80px;
-}
-
-.adBanner-top-text h3 {
-	font-weight: 200;
-}
-
-.adBanner-top-button {
-	border: 1px solid orange;
-	background-color: orange;
-	margin-top: 15px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
-	max-width: 30%;
-}
-
-.adBanner-top-button a {
-	color: white;
-	padding-top: 15px;
-}
-
-.adBanner-top-button a:hover {
-	color: white;
-	text-decoration: none;
-}
-
 .teamInfo {
 	text-align: center;
 }
@@ -58,14 +29,6 @@
 
 .active-link {
 	color: orange !important;
-}
-
-.homeMenu a {
-	color: black;
-}
-
-.homeMenu a:hover {
-	color: orange;
 }
 
 .slideshowContent {
@@ -99,33 +62,6 @@
 	padding-top: 10px;
 }
 
-/*.currentGame {
-	z-index: 10;
-	position: relative;
-	display: inline-block;
-	text-align: center;
-}
-
-.currentGameScore ul {
-	list-style: none;
-	float: left;
-	line-height: 1.9em;
-	text-align: center;
-}
-
-.currentGameScore #aguilas {
-	color: orange;
-}*/
-
-/*.gameStats {
-}
-
-.gameStats ul {
-	list-style: none;
-	float: left;
-	line-height: 1.9em;
-}*/
-
 .currentGame table {
 	background-color: lightgray;
 	border: none;
@@ -140,18 +76,6 @@
 .teamData {
 	background-color: gray !important;
 	font-weight: 400 !important;
-}
-
-.diamond {
-	margin-bottom: -100px;
-}
-
-/*.diamond-batter section {
-	text-align: center;
-}*/
-
-.diamond img {
-	height: 30%;
 }
 
 #base2 {
@@ -221,55 +145,23 @@
 	transition : .5s ease-in;
 }
 
-/*#base2 {
-	width: 0;
-	height: 0;
-	border: 50px solid transparent;
-	border-bottom-color: orange;
-	position: relative;
-	top: -90px;
-	left: -10px;
-
-}
-#base2:after {
-	content: '';
-	position: absolute;
-	left: -50px;
-	top: 50px;
-	width: 0;
-	height: 0;
-	border: 50px solid transparent;
-	border-top-color: orange;
+/* Centering for bases on smaller screens */
+@media (min-width: 530px) and (max-width: 991px) {
+	.diamond {
+		padding: 300px 0px 0px 80px;
+	}	
 }
 
-#base3 {
-	width: 0;
-	height: 0;
-	border: 50px solid transparent;
-	border-bottom-color: orange;
-	position: relative;
-	top: -190px;
-	left: 110px;
+/* Centering for current batter on smaller screens */
+@media (min-width: 707px) and (max-width: 991px) {
+	.currentBatter {
+		padding-left: 75px;
+	}
 }
-#base3:after {
-	content: '';
-	position: absolute;
-	left: -50px;
-	top: 50px;
-	width: 0;
-	height: 0;
-	border: 50px solid transparent;
-	border-top-color: orange;
-}*/
 
 .balls li, .strikes li, .outs li {
-	padding: 0px 5px 0px 5px;
-	/*float: left;*/
-}
-
-.balls ul, li {
+	padding: 0px 10px 0px 10px;
 	float: left;
-	display: inline-block;
 }
 
 #indicator {
@@ -284,6 +176,23 @@
    -moz-border-radius: 70px; 
    -webkit-border-radius: 70px; 
    border-radius: 70px;
+   padding-right: 5px;
+   margin: 7px 3px 0px 0px;
+   transition: .5s ease-in;
+}
+
+.checked {
+	background-color: black !important;
+	transition: .5s ease-in;
+}
+
+.outsChecked {
+	background-color: red !important;
+	transition : .5s ease-in;
+}
+
+.outs #indicator {
+	margin-right: -3px;
 }
 
 .currentBatter img {
@@ -294,19 +203,20 @@ tr#aguilasScore {
 	color: orange;
 }
 
-.audio-video ul {
-	/*margin-top: -10px;*/
-	float: left;
-	list-style: none;
-}
-
-.audio-video ul>li {
-	background-color: red;
+.audio-video {
+	text-align: center;
 }
 
 .audio-video img {
-	height: 10%;
+	height: 80px;
 }
+
+/* Audio and video images resizing for tablets and mobiles */
+/*@media (max-width: 991px) {
+	.audio-video img {
+		height: 150px;
+	}
+}*/
 
 .ads-Review {
 	padding-top: 15px;
@@ -340,7 +250,7 @@ tr#aguilasScore {
 	font-weight: 200;
 	padding-top: 8px;
 	padding-bottom: 22px;
-	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .gameReview h3 {
@@ -403,11 +313,12 @@ table {
 	border: none !important;
 }
 
-/* Overriding end */
+/* Overriding ending */
 
 .tableBg {
 	background-color: lightgray;
 	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .informationTable h4 {
@@ -429,53 +340,9 @@ table {
 	padding: 5px 5px;
 }
 
-.informationTableBg {
-	/*background-color: lightgray;*/
-}
-
-.leagueTable {
-	
-}
-
 .teamsLeaderTable p {
 	background-color: white;
 	padding: 5px 5px;
-}
-
-.adBanner-bottom {
-	background-color: black;
-	color: white;
-	text-align: center;
-	margin-top: 10px;
-}
-
-.adBanner-bottom-wrapper {
-	padding-top: 10px;
-	padding-bottom: 80px;
-}
-
-.adBanner-bottom-text h3 {
-	font-weight: 200;
-}
-
-.adBanner-bottom-button {
-	border: 1px solid orange;
-	background-color: orange;
-	margin-top: 15px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
-	max-width: 30%;
-}
-
-.adBanner-bottom-button a {
-	color: white;
-	padding-top: 15px;
-}
-
-.adBanner-bottom-button a:hover {
-	color: white;
-	text-decoration: none;
 }
 
 .informationTable th {
@@ -485,18 +352,6 @@ table {
     font-weight: 200;
 }
 
-.footer {
-	background-color: yellow;
-	text-align: center;
-	font-size: 1.2em;
-	display: block;
-}
-
-.footerMenu {
-	text-align: center;
-}
-
-.footerMenu ul, li {
-	list-style: none;
-	float: left;
+iframe {
+	border-bottom: 10px solid orange !important;
 }

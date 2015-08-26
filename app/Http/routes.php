@@ -11,6 +11,22 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function () 
+{
     return view('home');
+});
+
+Route::get('/team', function()
+{
+	return view('team');
+});
+
+Route::get('/news', function()
+{
+	return view('news');
+});
+
+Route::get('/contact', function()
+{
+	return view('contact');
 });

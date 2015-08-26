@@ -1,0 +1,120 @@
+.newsHeader {
+	background-color: orange;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.newsHeader h2 {
+	font-weight: 200;
+	/*font-size: 2em;*/
+	text-align: center;
+}
+
+.news {
+	padding-top: 20px;
+	padding-bottom: 25px;
+	padding-left: 15px;
+	margin: 0px 15px 0px 15px;
+}
+
+.newsTitle h1 {
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 2.5em;
+	font-weight: 200;
+	color: lightgray;
+}
+
+.news p {
+	/*margin-left: 10px;*/
+}
+
+.newsImg {
+	text-align: center;
+}
+
+.newsImg img {
+	display: initial;
+}
+
+.newsText {
+	/*padding-top: 15px;*/
+}
+
+/* Image and text responsivenes */
+/*@media (min-width: 992px) {
+	.news {
+		margin-left: 150px !important;
+		padding-right: 300px !important;
+	}
+}
+
+@media (min-width: 700px & max-width: 991px) {
+	.news {
+		margin-left: 100px !important;
+		padding-right: 200px !important;
+	}
+}*/
+
+.stripeBackground {
+	background-color: lightgray;
+	height: 150px;
+}
+
+.extras {
+	padding: 30px 0px;
+}
+
+.extras span {
+
+}
+
+.otherNews h4 {
+	font-weight: 200;
+	font-size: 2em;
+	color: silver;
+}
+
+.otherNews ul {
+	list-style: none;
+	padding-left: 20px;
+}
+
+.otherNews li {
+	padding-top: 5px;
+}
+
+.otherNews a {
+	color: black;
+}
+
+.otherNews a:hover {
+	color: orange;
+	text-decoration: none;
+}
+
+.otherNews p {
+	display: inline-flex;
+	padding-right: 10px;
+	font-weight: 700;
+}
+
+.commentsHeader {
+	background-color: orange;
+	border: 1px solid black;
+}
+
+/*.arrow {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid black;
+}*/
+
+.comments h3 {
+	font-weight: 200;
+	font-size: 2em;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	color: lightgray;
+}

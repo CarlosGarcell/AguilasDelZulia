@@ -1,0 +1,111 @@
+a:active {
+	color: orange;
+}
+
+.adBanner-top-wrapper {
+	padding-top: 10px;
+	padding-bottom: 80px;
+}
+
+.adBanner-top-text h3 {
+	font-weight: 200;
+}
+
+.adBanner-top-button {
+	border: 1px solid orange;
+	background-color: orange;
+	margin-top: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.adBanner-top-button a {
+	color: white;
+	padding-top: 15px;
+}
+
+.adBanner-top-button a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.navbar {
+	position: fixed;
+	height: 100%;
+	margin-bottom: 0px !important;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	padding-top: 10px;
+	background-color: orange;
+	width: 100%;
+	float: right;
+	padding-left: 15px;
+}
+
+.navbar a:hover {
+	color: orange !important;
+}
+
+.mainMenu {
+	padding-bottom: 15px;
+}
+
+.mainMenu a {
+	color: black;
+}
+
+.mainMenu a:hover {
+	color: orange;
+}
+
+@media (min-width: 401px) and (max-width: 991px) {
+	.mainMenu ul {
+		text-align: center;
+	}
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.adBanner-bottom {
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.adBanner-bottom-wrapper {
+	padding-top: 10px;
+	padding-bottom: 80px;
+}
+
+.adBanner-bottom-text h3 {
+	font-weight: 200;
+}
+
+.adBanner-bottom-button {
+	border: 1px solid orange;
+	background-color: orange;
+	margin-top: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.adBanner-bottom-button a {
+	color: white;
+	padding-top: 15px;
+}
+
+.adBanner-bottom-button a:hover {
+	color: white;
+	text-decoration: none;
+}

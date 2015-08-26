@@ -5,42 +5,8 @@
 </head>
 
 @section('content')
-
-	<!-- Top advertisement banner -->
-	<section class="adBanner-top col-xs-12">
-		<div class="adBanner-top-wrapper">
-			<div class="adBanner-top-text col-xs-7">
-				<h3>¿QUIERES PUBLICAR EN ESTA P&Aacute;GINA?</h3>
-			</div>
-			<div class="adBanner-top-button col-xs-4">
-				<a href="#">PUBLICIDAD AQU&Iacute;</a>
-			</div>
-		</div>
-	</section>
-
-	<!-- Logo, team name and menu -->
-	<div class="container">
-		<section class="teamInfo page-header col-xs-12">
-			<div class="row">
-				<div class="col-md-3">
-					<img src="/images/aguilas-logo.jpg">
-				</div>
-				<div class="col-md-3 teamName">
-					<h1>&Aacute;guilas del Zulia</h1>
-				</div>
-			</div>
-		</section>
-		<section class="homeMenu">
-			<ul class="nav nav-pills">
-				<li role="presentation"><a href="#">INICIO</a></li>
-				<li role="presentation"><a href="#">EQUIPO</a></li>
-				<li role="presentation"><a href="#">NOTICIAS</a></li>
-				<li role="presentation"><a href="#">CONTACTO</a></li>
-			</ul>
-		</section>
-	</div>
 	
-	<!-- Slidewshow -->
+	<!-- Slideshow -->
 	<div class="jumbotron slideshow">
 		<section class="slideshowContent">
 			<h1>&Aacute;guilas del Zulia</h1>
@@ -50,15 +16,12 @@
 
 	<!-- Current game information -->
 	<div class="currentGame col-md-12 container">
-		<!-- <section class="currentGameHeader">
-				<h4>Scoreboard</h4>
-		</section> -->
 		<section class="col-md-7 row">
 			<div class="table-responsive col-md-12">
 				<table class="table">
 					<thead>
 						<tr id="innings">
-							<th>Inning</th>
+							<th>9no <span class="glyphicon glyphicon-triangle-bottom"></span></th>
 							@for($i = 1; $i < 10; $i++)
 								<th>{{ $i }}</th>
 							@endfor
@@ -107,23 +70,26 @@
 			</section>
 
 			<!-- Current batter standing -->
-			<section class="col-md-2  currentBatter">
+			<section class="col-md-2 col-xs-12 currentBatter">
 				<!-- <img src="/images/BSO.jpg"> -->
-				<ul class="balls row">
-					<li id="indicator">B</li>
-					<li id="circle"></li>
-					<li id="circle"></li>
-					<li id="circle"></li>
-					<li id="circle"></li>
-				</ul>
-				<ul class="strikes row">
-					<li id="indicator">S</li>
-					<li id="circle"></li>
-					<li id="circle"></li>
-					<li id="circle"></li>
-				</ul>
+				<section class="balls-Strikes">
+					<ul class="balls row">
+						<li id="indicator">B</li>
+						<li id="circle"></li>
+						<li id="circle"></li>
+						<li id="circle"></li>
+						<li id="circle"></li>
+					</ul>
+					<ul class="strikes row">
+						<li id="indicator">S</li>
+						<li id="circle"></li>
+						<li id="circle"></li>
+						<li id="circle"></li>
+					</ul>
+				</section>
 				<ul class="outs row">
 					<li id="indicator">O</li>
+					<li id="circle"></li>
 					<li id="circle"></li>
 					<li id="circle"></li>
 				</ul>
@@ -132,10 +98,12 @@
 
 		<!-- Audio & Video -->
 		<section class="col-md-1 col-xs-12 audio-video">
-			<ul>
-				<li class="col-md-12 col-xs-12"><a href="#"><img src="/images/headphone-icon.png"></a></li>
-				<li class="col-md-12 col-xs-12"><a href="#"><img src="/images/television-icon.png"></a></li>
-			</ul>
+			<div class="col-md-12 col-sm-6 col-xs-6">
+				<a href="#"><img src="/images/headphone-icon.png"></a>
+			</div>
+			<div class="col-md-12 col-sm-6 col-xs-6">
+				<a href="#"><img src="/images/television-icon.png"></div></section></a>
+			</div>
 		</section>
 	</div>
 
@@ -283,31 +251,4 @@
 			</section>
 		</div>
 	</div>
-
-	<!-- Bottom advetisement banner -->
-	<section class="adBanner-bottom col-xs-12">
-		<div class="adBanner-bottom-wrapper">
-			<div class="adBanner-bottom-text col-xs-7">
-				<h3>¿QUIERES PUBLICAR EN ESTA P&Aacute;GINA?</h3>
-			</div>
-			<div class="adBanner-bottom-button col-xs-4">
-				<a href="#">PUBLICIDAD AQU&Iacute;</a>
-			</div>
-		</div>
-	</section>
-
-	<!-- Footer -->
-	<section class="footer col-md-12">
-		<div class="copyright col-xs-6">
-			<p>Copyright&copy;</p>
-		</div>
-		<div class="col-xs-6">
-			<ul class="footerMenu">
-				<li>INICIO / </li>
-				<li> EQUIPO / </li>
-				<li> NOTICIAS / </li>
-				<li> CONTACTO</li>
-			</ul>
-		</div>
-	</section>
 @endsection
